@@ -61,7 +61,7 @@ jobs:
         containerAppEnvironment: microhack-containerenvironment
         containerAppName: microhack-containerapp
         targetPort: 8080
-        
+        environmentVariables: API_URL=https://microhack-aiapp.yellowdesert-530e9392.spaincentral.azurecontainerapps.io
     - uses: actions/checkout@v4
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
